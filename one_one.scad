@@ -37,7 +37,9 @@ module one1_body() {
 }
 
 module one_half() {
+	rotate([90, 0, 0])
 	difference() {
+		rotate([0, 90, 0])
 		one1_body();
 		translate([-50, 0, 0])
 		cube([100, 200, 200], center=true);
@@ -56,6 +58,8 @@ module eyes() {
 			translate([0, -radius, 0])
 			rotate([90, 0, 0])
 			cylinder(r=width/3, h = width, center=true);
+			translate([0, ball_dia/2 - 2, 0])
+			cube([200, 5, 1], center=true);
 		}
 	}
 }
