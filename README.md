@@ -1,5 +1,7 @@
 # Poseable One1 figurine
 
+One-One from the show Infinity Train
+
 ![one_one scad model](one1.png)
 
 * Designed for 3D printing
