@@ -23,7 +23,7 @@ module band() {
 			sphere(r=radius + 0.2);
 			sphere(r=radius - wall_thickness);
 		}
-		cube([width, ball_dia *2, ball_dia *2], center=true);
+		cube([width * 0.95, ball_dia *2, ball_dia *2], center=true);
 	}
 }
 
@@ -50,14 +50,17 @@ module eyes() {
 	difference() {
 		band();
 		union() {
+			//eye 0
 			rotate([angle, 0, 0])
 			translate([0, -radius, 0])
 			rotate([90, 0, 0])
 			cylinder(r=width/3, h = width, center=true);
+			//eye 1
 			rotate([-angle, 0, 0])
 			translate([0, -radius, 0])
 			rotate([90, 0, 0])
 			cylinder(r=width/3, h = width, center=true);
+			//split
 			translate([0, ball_dia/2 - 2, 0])
 			cube([200, 5, 1], center=true);
 		}
