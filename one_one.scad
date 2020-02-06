@@ -75,7 +75,7 @@ module leg() {
 		cylinder(r=ball_dia/25, h=width/2, center=true);
 		union() {
 			//axial hole
-			cylinder(r=0.5, h= 100, center=true);
+			cylinder(r=1, h= 100, center=true);
 			//socket for the ball joint
 			sphere(r=ball_dia/25);
 			// chopping off some bottom to avoid zero thickness wall
@@ -103,9 +103,9 @@ module leg_end() {
 		}
 		}
 		union() {
-			cylinder(r=0.5, h= 100, center=true);
+			cylinder(r=1, h= 100, center=true);
 			translate([0, 0, 50])
-			cube([1, 100, 100], center=true);
+			cube([2, 100, 100], center=true);
 		}
 	}
 }

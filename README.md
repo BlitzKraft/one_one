@@ -2,7 +2,11 @@
 
 One-One from the show Infinity Train
 
+## Design
 ![one_one scad model](one1.png)
+
+## Printed
+![one_one printed](One_One_printed.jpg)
 
 * Designed for 3D printing
 * Ball (body) prints in two halves
